@@ -1,0 +1,64 @@
+<!ELEMENT Store (StoreDetail, Music, Contact)>
+
+<!ELEMENT StoreDetail (HeaderLogo, Name, Motto, Caption)>
+
+<!ELEMENT HeaderLogo (img)>
+<!ATTLIST HeaderLogo xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!ELEMENT img (#PCDATA)>
+<!ATTLIST img id (main_logo|footer_logo) #IMPLIED class CDATA #IMPLIED src CDATA #REQUIRED>
+
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Motto (#PCDATA)>
+<!ELEMENT Caption (#PCDATA)>
+
+
+
+<!ELEMENT Music (Album+)>
+
+<!ELEMENT Album (AlbumDetails, Songs)>
+<!ATTLIST Album albumID CDATA #REQUIRED genre CDATA #REQUIRED releaseYear CDATA #REQUIRED>
+
+<!ELEMENT AlbumDetails (AlbumArt, Description)>
+
+<!ELEMENT AlbumArt (img)>
+<!ATTLIST AlbumArt xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+
+<!ELEMENT Description (AlbumTitle, SubTitle?, Comment?, Rating?, Producer+, RecordLabel+, Price)>
+
+<!ELEMENT AlbumTitle (#PCDATA)>
+<!ELEMENT SubTitle (#PCDATA)>
+<!ELEMENT Comment (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT RecordLabel (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ATTLIST Price currency (usd|pound) #REQUIRED discount CDATA #IMPLIED>
+
+<!ELEMENT Songs (Song+)>
+
+<!ELEMENT Song (Title, Artist, FeaturedArtist*, Writer+, Director?, MusicVideo)>
+<!ATTLIST Song songID CDATA #REQUIRED genre CDATA #REQUIRED length CDATA #REQUIRED releaseDate CDATA #REQUIRED>
+
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT FeaturedArtist (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+
+<!ELEMENT MusicVideo (iframe)>
+<!ATTLIST MusicVideo xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!ELEMENT iframe (#PCDATA)>
+<!ATTLIST iframe width CDATA #REQUIRED height CDATA #REQUIRED src CDATA #REQUIRED frameborder CDATA #FIXED "0">
+
+
+
+
+<!ELEMENT Contact (FooterLogo, Address, Phone, Email, Website)>
+
+<!ELEMENT FooterLogo (img)>
+<!ATTLIST FooterLogo xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>

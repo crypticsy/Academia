@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+    Author: Crypticsy
+    Date  : 20th April 2021
+-->
+
+
+
+<xs:schema  xmlns:tns="http://www.w3.org/1999/xhtml"  
+            attributeFormDefault="unqualified" 
+            elementFormDefault="qualified" 
+            targetNamespace="http://www.w3.org/1999/xhtml" 
+            xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+
+  <xs:element name="HeaderLogo">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="img">
+          <xs:complexType>
+            <xs:simpleContent>
+
+              <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:string" use="required" />
+                <xs:attribute name="src" type="xs:string" use="required" />
+              </xs:extension>
+
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <xs:element name="AlbumArt">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="img">
+          <xs:complexType>
+            <xs:simpleContent>
+
+              <xs:extension base="xs:string">
+                <xs:attribute name="class" type="xs:string" use="required" />
+                <xs:attribute name="src" type="xs:string" use="required" />
+              </xs:extension>
+
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <xs:element name="MusicVideo">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="iframe">
+          <xs:complexType>
+            <xs:simpleContent>
+
+              <xs:extension base="xs:string">
+                <xs:attribute name="width" type="xs:unsignedShort" use="required" />
+                <xs:attribute name="height" type="xs:unsignedByte" use="required" />
+                <xs:attribute name="src" type="xs:string" use="required" />
+                <xs:attribute name="frameborder" type="xs:unsignedByte" use="required" />
+              </xs:extension>
+
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <xs:element name="FooterLogo">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="img">
+          <xs:complexType>
+            <xs:simpleContent>
+
+              <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:string" use="required" />
+                <xs:attribute name="src" type="xs:string" use="required" />
+              </xs:extension>
+
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+</xs:schema>

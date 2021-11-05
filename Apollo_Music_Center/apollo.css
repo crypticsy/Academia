@@ -1,0 +1,293 @@
+/*Import custom fonts*/
+
+@font-face {
+    font-family: comfortaa_b;
+    src: url(./static/font/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: comfortaa_r;
+    src: url(./static/font/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: comfortaa_l;
+    src: url(./static/font/Comfortaa-Light.ttf);
+}
+
+
+/* Tag section */
+
+* {
+    color: #f1f3f2;
+    font-family: comfortaa_r;
+    display: grid;
+}
+
+
+/* Change the look of scrollbar to custom */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f2f2f;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #4a4949;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 50px;
+}
+
+Store {
+    background-color: #181818;
+}
+
+StoreDetail {
+    height: 100vh;
+    text-align: center;
+    /* Make the elements of the tag non-selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+Name {
+    display: box;
+    color: #ffeb00;
+    font-size: 2.5vmax;
+    font-family: comfortaa_b;
+    margin-top: 24vmax;
+    margin-bottom: 5vmax;
+}
+
+HeaderLogo {
+    position: absolute;
+    top: 10%;
+    left: 36%;
+}
+
+#main_logo {
+    width: 28vmax;
+    border-style: solid;
+    border-color: rgb(255, 235, 0);
+    border-width: 0.0001px;
+}
+
+Motto {
+    font-size: 1.25vmax;
+    padding-bottom: 2.5vmax;
+}
+
+Caption {
+    color: #bbbbbb;
+    font-size: 0.9vmax;
+    line-height: 1.75vmax;
+    padding-left: 20vmax;
+    padding-right: 20vmax;
+    padding-bottom: 10vmax;
+}
+
+Album {
+    background-color: #2f2f2f;
+    margin: 2vmax;
+    padding: 2vmax;
+    border-radius: 0.75vmax;
+}
+
+AlbumDetails {
+    display: flex;
+}
+
+About {
+    color: #bbbbbb;
+    font-size: 0.9vmax;
+    line-height: 1.75vmax;
+    padding-left: 20vmax;
+    padding-right: 20vmax;
+    padding-bottom: 20vmax;
+}
+
+.album_art {
+    width: 15vmax;
+    margin-top: 1vmax;
+    margin-bottom: 3vmax;
+    margin-right: 3vmax;
+    border-radius: 0.75vmax;
+}
+
+.album_art:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+AlbumTitle,
+SubTitle,
+Rating,
+Comment,
+Producer,
+RecordLabel,
+Price {
+    display: flex;
+    letter-spacing: 0.08vmax;
+}
+
+AlbumTitle {
+    color: #ffeb00;
+    font-size: 2vmax;
+    font-family: comfortaa_b;
+}
+
+SubTitle {
+    color: #bbbbbb;
+    font-size: 0.9vmax;
+    padding-top: 0.5vmax;
+}
+
+Comment {
+    color: #6a6a6a;
+    font-size: 0.9vmax;
+    padding-bottom: 2vmax;
+}
+
+Rating,
+Comment,
+Producer,
+RecordLabel,
+Price {
+    font-size: 0.9vmax;
+    white-space: pre;
+}
+
+Rating::before {
+    content: 'Rating : ';
+    color: #bbbbbb;
+}
+
+Rating::after {
+    content: ' out of 5 stars';
+}
+
+Producer::before {
+    content: 'Producer : ';
+    color: #bbbbbb;
+}
+
+RecordLabel::before {
+    content: 'Record Label : ';
+    color: #bbbbbb;
+}
+
+Price::before {
+    content: 'Price : ';
+    color: #bbbbbb;
+}
+
+Price::after {
+    content: ' 'attr(currency);
+}
+
+Price {
+    padding-bottom: 2vmax;
+}
+
+Songs {
+    display: flex;
+}
+
+Title,
+Artist,
+FeaturedArtist,
+Writer,
+Director,
+MusicVideo {
+    display: flex;
+    letter-spacing: 0.05vmax;
+    white-space: pre;
+}
+
+Title {
+    color: #ffeb00;
+    font-size: 1vmax;
+    font-family: comfortaa_b;
+    padding-bottom: 1vmax;
+}
+
+Title::before {
+    content: 'Song : ';
+    color: #f1f3f2;
+}
+
+Artist,
+FeaturedArtist,
+Writer,
+Director,
+MusicVideo {
+    color: #bbbbbb;
+    font-size: 0.9vmax;
+    padding-top: 0.5vmax;
+}
+
+Artist::before {
+    content: 'Artist : ';
+    color: #6a6a6a;
+}
+
+FeaturedArtist::before {
+    content: 'Ft. : ';
+    color: #6a6a6a;
+}
+
+Writer::before {
+    content: 'Writer : ';
+    color: #6a6a6a;
+}
+
+Director::before {
+    content: 'Director : ';
+    color: #6a6a6a;
+}
+
+iframe {
+    border-radius: 0.75vmax;
+    margin-top: 1vmax;
+    margin-right: 3vmax;
+}
+
+Contact {
+    text-align: center;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    /* Make the elements of the tag non-selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#footer_logo {
+    width: 5vmax;
+    margin: auto;
+    margin-bottom: 2vmax;
+}
+
+Address,
+Phone,
+Email,
+Website {
+    color: #909391;
+    font-size: 0.75vmax;
+    font-family: comfortaa_l;
+    letter-spacing: 0.11vmax;
+    margin: 0.225vmax;
+}

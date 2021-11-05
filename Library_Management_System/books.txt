@@ -1,0 +1,10 @@
+0, Wonder, R. J. Palacio, 20, $10.00
+1, The Catcher in the Rye, J. D. Salinger, 21, $12.00
+2, Animal Farm, George Orwell, 12, $8.50
+3, Pride and Prejudice, Jane Austen, 9, $8.50
+4, The Song of Achilles, Madeline Miller, 10, $9.50
+5, Little Women, Louisa May Alcott, 15, $10.50
+6, Lord of the Flies, William Golding, 20, $11.00
+7, The Picture of Dorian Gray, Oscar Wilde, 15, $8.50
+8, The Beatrice Letters, Lemony Snicket, 13, $9.50
+9, Diary of an Oxygen Thief, Anonymous, 11, $11.50

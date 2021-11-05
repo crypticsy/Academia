@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+    Author: Cypticsy
+    Date  : 20th April 2021
+-->
+
+
+
+<xs:schema  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Import the second XSD to handle multi namespace error -->
+  <xs:import schemaLocation="apollo_2.xsd" namespace="http://www.w3.org/1999/xhtml" />
+
+  <xs:element name="Store">
+    <xs:complexType>
+      <xs:sequence>
+
+
+
+        <xs:element name="StoreDetail">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <!-- Refer to the elemeent from the second XSD : catalog(2)_19030709.xsd -->
+              <xs:element xmlns:eppt1="http://www.w3.org/1999/xhtml" ref="eppt1:HeaderLogo" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Motto" type="xs:string" />
+              <xs:element name="Caption" type="xs:string" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+
+        <xs:element name="Music">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="Album" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+
+
+                    <xs:element name="AlbumDetails">
+                      <xs:complexType>
+                        <xs:sequence>
+
+                          <!-- Refer to the elemeent from the second XSD : catalog(2)_19030709.xsd -->
+                          <xs:element xmlns:eppt2="http://www.w3.org/1999/xhtml" ref="eppt2:AlbumArt" />
+
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+
+                                <xs:element name="AlbumTitle" type="xs:string" />
+                                <xs:element name="SubTitle" type="xs:string" minOccurs="0" />
+                                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                                <xs:element name="Rating" type="xs:unsignedByte" minOccurs="0" />
+                                <xs:element name="Producer" type="xs:string" maxOccurs="unbounded" />
+                                <xs:element name="RecordLabel" type="xs:string" maxOccurs="unbounded" />
+
+                                <xs:element name="Price">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+
+                                      <xs:extension base="xs:decimal">
+                                        <xs:attribute ref="currency" use="required" />
+                                        <xs:attribute name="discount" type="xs:string" use="optional" />
+                                      </xs:extension>
+
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+
+                    <xs:element name="Songs">
+                      <xs:complexType>
+                        <xs:sequence>
+
+                          <xs:element name="Song" maxOccurs="unbounded" >
+                            <xs:complexType>
+                              <xs:sequence>
+
+                                <xs:element name="Title" type="xs:string" />
+                                <xs:element name="Artist" type="xs:string" />
+                                <xs:element name="FeaturedArtist" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                                <xs:element name="Writer" type="xs:string" maxOccurs="unbounded" />
+                                <xs:element name="Director" type="xs:string" minOccurs="0" />
+                                 <!-- Refer to the elemeent from the second XSD : catalog(2)_19030709.xsd -->
+                                <xs:element xmlns:eppt3="http://www.w3.org/1999/xhtml" ref="eppt3:MusicVideo" />
+
+                              </xs:sequence>
+                              <xs:attribute name="songID" type="xs:string" use="required" />
+                              <xs:attribute name="genre" type="xs:string" use="required" />
+                              <xs:attribute ref="length" use="required" />
+                              <xs:attribute name="releaseDate" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    
+                  </xs:sequence>
+                  <xs:attribute ref="albumID" use="required" />
+                  <xs:attribute name="genre" type="xs:string" use="required" />
+                  <xs:attribute name="releaseYear" type="xs:unsignedShort" use="required" />
+                </xs:complexType>
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+
+        <xs:element name="Contact">
+          <xs:complexType>
+            <xs:sequence>
+
+              <!-- Refer to the elemeent from the second XSD : catalog(2)_19030709.xsd -->
+              <xs:element xmlns:eppt4="http://www.w3.org/1999/xhtml" ref="eppt4:FooterLogo" />
+              <xs:element name="Address" type="xs:string" />
+              <xs:element name="Phone" type="xs:string" />
+              <xs:element name="Email" type="xs:string" />
+              <xs:element name="Website" type="xs:string" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+
+
+      </xs:sequence>
+    </xs:complexType>
+
+  </xs:element>
+
+
+
+  <xs:attribute name="currency">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="pound" />
+				<xs:enumeration value="usd" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+  <xs:attribute name="albumID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="AMC-AL[0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+  <xs:attribute name="songID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="AMC-AL[0-9]{4}-SG[0-9]{4}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+  <xs:attribute name="length">
+		<xs:simpleType>
+			<xs:restriction base="xs:time">
+				<xs:pattern value="[0-9]{2}:[0-9]{2}:[0-9]{2}"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+
+</xs:schema>

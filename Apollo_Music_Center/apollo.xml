@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Load external CSS to the xml document  -->
+<?xml-stylesheet type="text/css" href="apollo.css"?>
+
+<!-- Load external DTD to the xml document for xml validation -->
+<!-- <!DOCTYPE Store SYSTEM "apollo.dtd"> -->
+
+<!--
+    Author: Cypticsy
+    Date  : 14th April 2021
+-->
+
+
+
+ <!-- Root tag and Schema implementation  -->
+<!-- <Store  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+        xsi:noNamespaceSchemaLocation="apollo.xsd" 
+        xsi:schemaLocation="https://www.w3schools.com/xml apollo.xsd"> -->
+
+
+ <!-- Root tag without Schema implementation  -->
+ <Store>
+
+
+    <!-- First element tag ( child of the root ) containing general details regarding the store -->
+    <StoreDetail>
+
+        <!-- Load local image to the xml document -->
+        <HeaderLogo xmlns="http://www.w3.org/1999/xhtml">
+            <img id="main_logo" src="./static/images/main_logo.png">Apollo Music Center logo</img>
+        </HeaderLogo>
+
+        <Name>Apollo Music Center, Inc.</Name>
+        <Motto>Gone are the days of the good old CDs. Time for the modern age of music selection at your hand.</Motto>
+        <Caption>
+            <![CDATA[
+                Being an industry leader at music retail for the past 20 years has not only given us a chance to serve our valued 
+                customers, but also allowed us to look for new avenues in the music distribution industry. As such we are proud to
+                deliver this platform with the accessiblilty to view our colleciton of available records for purchase though a click of a button.  
+            ]]>
+        </Caption>
+
+    </StoreDetail>
+
+
+
+    <!-- Second element tag ( child of the root ) containing details regarding the music albums that are available at the store -->
+    <Music>
+
+
+
+        <Album albumID="AMC-AL0001" genre="Pop,Hip Hop,Rhythm and Blues" releaseYear="2019">
+
+            <!-- Details regarding the Album -->
+            <AlbumDetails>
+
+                <!-- Load local image to the xml document -->
+                <AlbumArt xmlns="http://www.w3.org/1999/xhtml">
+                    <img class="album_art" src="./static/images/Ed_Sheeran_-_No._6_Collaborations_Project.png">Ed_Sheeran_-_No._6_Collaborations_Project.png</img> 
+                </AlbumArt>
+
+                <Description>
+
+                    <AlbumTitle>No.6 Collaborations Project</AlbumTitle>
+                    <SubTitle>Fourth studio album by English singer-songwriter Ed Sheeran</SubTitle>
+                    <Comment>A collaboration of artists from various genre of the international community.</Comment>
+                    <Rating>4</Rating>
+
+                    <Producer>Ed Sheeran</Producer>
+                    <Producer>Benny Blanco</Producer>
+                    <Producer>Kenny Beats</Producer>
+        
+                    <RecordLabel>Asylum Records</RecordLabel>
+                    <RecordLabel>Atlantic Records</RecordLabel>
+        
+                    <Price currency="pound" discount="11%">17.98</Price>
+
+                </Description>
+
+            </AlbumDetails>
+            
+            <Songs>
+
+                <Song songID="AMC-AL0001-SG001" genre="Synthpop,Rhythm and Blues" length="00:03:17" releaseDate="10-05-2019">
+
+                    <Title>Beautiful People</Title>
+                    
+                    <Artist>Ed Sheeran</Artist>
+                    <FeaturedArtist>Khalid Robinson</FeaturedArtist>
+    
+                    <Writer>Ed Sheeran</Writer>
+                    <Writer>Khalid Robinson</Writer>
+                    <Writer>Fred Gibson</Writer>
+                    <Writer>Max Martin</Writer>
+                    <Writer>Shellback</Writer>
+                    <Director>Andy McLeod</Director>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/mj0XInqZMHY" frameborder="0" >https://www.youtube.com/watch?v=mj0XInqZMHY</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0001-SG002" genre="Pop,Rhythm and Blues" length="00:03:26" releaseDate="24-05-2019">
+
+                    <Title>Cross Me</Title>
+                    
+                    <Artist>Ed Sheeran</Artist>
+                    <FeaturedArtist>Chancelor Bennett</FeaturedArtist>
+                    <FeaturedArtist>Rakim Allen</FeaturedArtist>
+    
+                    <Writer>Ed Sheeran</Writer>
+                    <Writer>Chancelor Bennett</Writer>
+                    <Writer>Rakim Allen</Writer>
+                    <Writer>Gibson</Writer>
+                    <Director>Ryan Staake</Director>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/S5n9emOr7SQ" frameborder="0" >https://www.youtube.com/watch?v=S5n9emOr7SQ</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0001-SG003" genre="Pop" length="00:03:17" releaseDate="12-07-2019">
+
+                    <Title>Put It All on Me</Title>
+                    
+                    <Artist>Ed Sheeran</Artist>
+                    <FeaturedArtist>Ella Howell</FeaturedArtist>
+    
+                    <Writer>Ed Sheeran</Writer>
+                    <Writer>Ella Howell</Writer>
+                    <Writer>Gibson</Writer>
+                    <Director>Jason Koenig</Director>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/ryJgDL9jzKk" frameborder="0" >https://www.youtube.com/watch?v=ryJgDL9jzKk</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0001-SG004" genre="Pop" length="00:02:30" releaseDate="10-07-2019">
+
+                    <Title>Way to Break My Heart</Title>
+                    
+                    <Artist>Ed Sheeran</Artist>
+                    <FeaturedArtist>Skrillex</FeaturedArtist>
+    
+                    <Writer>Ed Sheeran</Writer>
+                    <Writer>Sonny Moore</Writer>
+                    <Writer>Mac</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/sRpn_6-z1uw" frameborder="0" >https://www.youtube.com/watch?v=sRpn_6-z1uw</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+            </Songs>
+
+        </Album>
+
+
+
+        <Album albumID="AMC-AL0002" genre="Pop,Alternative Rock" releaseYear="2020">
+
+            <!-- Details regarding the Album -->
+            <AlbumDetails>
+
+                <!-- Load local image to the xml document -->
+                <AlbumArt xmlns="http://www.w3.org/1999/xhtml">
+                    <img class="album_art" src="./static/images/LANY_-_Mama's_Boy.png">LANY_-_Mama's_Boy.png</img> 
+                </AlbumArt>
+
+                <Description>
+
+                    <AlbumTitle>Mama’s Boy</AlbumTitle>
+                    <SubTitle>Third studio album by American indie pop band LANY</SubTitle>
+                    <Comment>The synth-pop group aches with boy-band sincerity over sugary arrangements and even a little pedal steel on their new album.</Comment>
+                    <Rating>4</Rating>
+
+                    <Producer>LANY</Producer>
+                    <Producer>King Henry</Producer>
+                    <Producer>Tyler Johnson</Producer>
+                    <Producer>Chad Copelin</Producer>
+        
+                    <RecordLabel>Polydor Records</RecordLabel>
+        
+                    <Price currency="usd" discount="14%">13.98</Price>
+
+                </Description>
+
+            </AlbumDetails>
+
+            <Songs>
+
+                <Song songID="AMC-AL0002-SG001" genre="Pop" length="00:03:19" releaseDate="02-10-2020">
+
+                    <Title>Heart Won't Let Me</Title>
+                    
+                    <Artist>LANY</Artist>
+    
+                    <Writer>Klein</Writer>
+                    <Writer>Yatchenko</Writer>
+                    <Writer>Allen</Writer>
+                    <Director>Isaac Ravishankara</Director>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/o6gcaA9m_zU" frameborder="0" >https://www.youtube.com/watch?v=o6gcaA9m_zU</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0002-SG002" genre="Pop" length="00:03:17" releaseDate="02-10-2020">
+
+                    <Title>Nobody Else</Title>
+                    
+                    <Artist>LANY</Artist>
+    
+                    <Writer>Klein</Writer>
+                    <Writer>Daniel Dodd Wilson</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/uXD_I0K76D8" frameborder="0" >https://www.youtube.com/watch?v=uXD_I0K76D8</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0002-SG003" genre="Pop" length="00:03:33" releaseDate="02-10-2020">
+
+                    <Title>Cowboy in LA</Title>
+                    
+                    <Artist>LANY</Artist>
+    
+                    <Writer>Klein</Writer>
+                    <Writer>Yatchenko</Writer>
+                    <Writer>Allen</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/zkWT0MjE8iw" frameborder="0" >https://www.youtube.com/watch?v=zkWT0MjE8iw</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0002-SG004" genre="Pop" length="00:04:16" releaseDate="02-10-2020">
+
+                    <Title>I Still Talk to Jesus</Title>
+                    
+                    <Artist>LANY</Artist>
+    
+                    <Writer>Klein</Writer>
+                    <Writer>Yatchenko</Writer>
+                    <Writer>Shane McAnally</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/10jagWArzFw" frameborder="0" >https://www.youtube.com/watch?v=10jagWArzFw</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+            </Songs>
+
+        </Album>
+
+
+
+        <Album albumID="AMC-AL0003" genre="Hip Pop,Rap" releaseYear="2018">
+
+            <!-- Details regarding the Album -->
+            <AlbumDetails>
+
+                <!-- Load local image to the xml document -->
+                <AlbumArt xmlns="http://www.w3.org/1999/xhtml">
+                    <img class="album_art" src="./static/images/Powfu_-_Some_boring_love_stories.png">Powfu_-_Some_boring_love_stories.png</img> 
+                </AlbumArt>
+
+                <Description>
+
+                    <AlbumTitle>Some Boring, Love Stories</AlbumTitle>
+
+                    <Producer>Powfu</Producer>
+                    <RecordLabel>Independiente Records</RecordLabel>
+
+                    <Price currency="usd">10.32</Price>
+
+                </Description>
+
+            </AlbumDetails>
+            
+            <Songs>
+
+                <Song songID="AMC-AL0003-SG001" genre="Lo-fi,Hip Hop,Rap" length="00:02:35" releaseDate="05-10-2018">
+
+                    <Title>I can't sleep</Title>
+                    
+                    <Artist>Powfu</Artist>
+                    <FeaturedArtist>Sarcastic Sounds</FeaturedArtist>
+    
+                    <Writer>Powfu</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/2GgeLZMCzaA" frameborder="0" >https://www.youtube.com/watch?v=2GgeLZMCzaA</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0003-SG002" genre="Hip Hop,Rap" length="00:03:05" releaseDate="11-11-2018">
+
+                    <Title>Life is Changing</Title>
+                    
+                    <Artist>Powfu</Artist>
+                    <FeaturedArtist>Kinshii</FeaturedArtist>
+                    <FeaturedArtist>raynadayz</FeaturedArtist>
+    
+                    <Writer>Powfu</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/-n4wu3aOdpE" frameborder="0" >https://www.youtube.com/watch?v=-n4wu3aOdpE</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0003-SG003" genre="Lo-fi,Rap" length="00:02:53" releaseDate="09-10-2018">
+
+                    <Title>Nothing Matters</Title>
+                    
+                    <Artist>Powfu</Artist>
+                    <FeaturedArtist>Qawi Kamri</FeaturedArtist>
+    
+                    <Writer>Powfu</Writer>
+                    <Writer>Qawi Kamri</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/8SFKZMIeHyw" frameborder="0" >https://www.youtube.com/watch?v=8SFKZMIeHyw</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+                <Song songID="AMC-AL0003-SG004" genre="Lo-fi,Rap" length="00:03:25" releaseDate="12-12-2018">
+
+                    <Title>In a Bit</Title>
+                    
+                    <Artist>Powfu</Artist>
+                    <FeaturedArtist>Jay $tone</FeaturedArtist>
+    
+                    <Writer>Powfu</Writer>
+
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/HqN6zvfY7Ek" frameborder="0" >https://www.youtube.com/watch?v=HqN6zvfY7Ek</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+            </Songs>
+
+        </Album>
+
+
+
+        <Album albumID="AMC-AL0004" genre="Pop" releaseYear="2019">
+
+            <!-- Details regarding the Album -->
+            <AlbumDetails>
+
+                <!-- Load local image to the xml document -->
+                <AlbumArt xmlns="http://www.w3.org/1999/xhtml">
+                    <img class="album_art" src="./static/images/The_Script_-_Sunsets_and_Full_Moons.png">The_Script_-_Sunsets_and_Full_Moons.png</img> 
+                </AlbumArt>
+
+                <Description>
+
+                    <AlbumTitle>Sunsets &amp; Full Moons</AlbumTitle>
+                    <SubTitle>Sixth studio album by Irish rock trio The Script</SubTitle>
+                    <Comment> The Script had plans to embark on a European tour in 2021 in promotion of the album.</Comment>
+                    <Rating>3</Rating>
+
+                    <Producer>Danny O'Donoghue </Producer>
+                    <Producer>David Lucius King</Producer>
+                    <Producer>Jimbo Barry</Producer>
+                    <Producer>Mark Sheehan </Producer>
+                    <Producer>Samuel Tsang</Producer>
+        
+                    <RecordLabel>Sony Records</RecordLabel>
+        
+                    <Price currency="usd" discount="34%">11.55</Price>
+
+                </Description>
+
+            </AlbumDetails>
+            
+            <Songs>
+
+                <Song songID="AMC-AL0004-SG001" genre="Pop" length="00:03:32" releaseDate="08-11-2019">
+
+                    <Title>Something Unreal</Title>
+                    
+                    <Artist>The Script</Artist>
+    
+                    <Writer>Daniel O'Donoghue</Writer>
+                    <Writer>Mark Sheehan</Writer>
+                    <Writer>James Barry</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/SEFZQBED5MY" frameborder="0" >https://www.youtube.com/watch?v=SEFZQBED5MY</iframe>
+                    </MusicVideo>
+    
+                </Song>
+                
+                <Song songID="AMC-AL0004-SG002" genre="Pop" length="00:02:45" releaseDate="08-11-2019">
+
+                    <Title>If You Don't Love Yourself</Title>
+                    
+                    <Artist>The Script</Artist>
+    
+                    <Writer>Daniel O'Donoghue</Writer>
+                    <Writer>Mark Sheehan</Writer>
+                    <Writer>James Barry</Writer>
+                    <Writer>David Lucius King</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/oVSHtf2Tb-E" frameborder="0" >https://www.youtube.com/watch?v=oVSHtf2Tb-E</iframe>
+                    </MusicVideo>
+    
+                </Song>
+                
+                <Song songID="AMC-AL0004-SG003" genre="Pop" length="00:03:40" releaseDate="08-11-2019">
+
+                    <Title>Underdog</Title>
+                    
+                    <Artist>The Script</Artist>
+    
+                    <Writer>Daniel O'Donoghue</Writer>
+                    <Writer>Mark Sheehan</Writer>
+                    <Writer>James Barry</Writer>
+
+                    <!-- Include youtube embeds inside the XML document  -->
+                    <MusicVideo xmlns="http://www.w3.org/1999/xhtml">
+                        <iframe width="300" height="165" src="https://www.youtube.com/embed/VIkJMi_Q6bI" frameborder="0" >https://www.youtube.com/watch?v=VIkJMi_Q6bI</iframe>
+                    </MusicVideo>
+    
+                </Song>
+
+            </Songs>
+
+        </Album>
+
+
+
+
+    </Music>
+
+
+
+    <!-- Third element tag ( child of the root ) containing contact information of the store -->
+    <Contact>
+
+        <!-- Load local image to the xml document -->
+        <FooterLogo xmlns="http://www.w3.org/1999/xhtml">
+            <img id="footer_logo" src="./static/images/footer_logo.png">Apollo Music Center inverted logo</img> 
+        </FooterLogo>
+
+        <Address>621 Goldfield Street, Brooklyn, NY 11209</Address>
+        <Phone>(+718) 347-203-7147</Phone>        
+        <Email>info@apollomusicrecords.com</Email>
+        <Website>https://www.apollomusicrecords.com</Website>
+        
+    </Contact>
+
+
+
+</Store>
