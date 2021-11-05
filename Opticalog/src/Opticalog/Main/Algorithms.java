@@ -1,5 +1,5 @@
 /**
- * @author 19030709-Animesh Singh Basnet, 19031360-Pranamya Sharma, 19032186-Srijana Tamang
+ * @author Crypticsy
  */
 
 package Opticalog.Main;
