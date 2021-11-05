@@ -8,22 +8,41 @@ Glasses are a part of me, but they are also a part of the industry. If you just 
 
  
   ![](./screenshots/op1.png)
-
+ 
+  Splash scrren
+  
+ <br>
  
   ![](./screenshots/op2.png)
 
+  Log in page
+  
+ <br>
  
   ![](./screenshots/op3.png)
  
+  Sign up page
+  
+ <br>
 
   ![](./screenshots/op4.png)
  
-
-  ![](./screenshots/op5.png)
- 
+  Main menu
+  
+ <br>
 
   ![](./screenshots/op6.png)
+ 
+  Product addition
+  
+ <br>
 
+  ![](./screenshots/op5.png)
+
+  About opticalog
+  
+ <br>
+ 
 </div>
 
 #### Run the application
