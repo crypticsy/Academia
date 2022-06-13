@@ -1,9 +1,11 @@
 # Academia
-A collection of assignments that I enjoyed developing
+A collection of assessment project that I enjoyed developing
 
 <br>
 
-#### Bachelors
+#### Undergraduate
 * [Apollo Music Store (XML)](./Apollo_Music_Center/)
+* [Chess Engine (Python)](https://github.com/crypticsy/Playground/tree/master/Game_Engine/Chess)
+* [DVD Rental Management System (ASP.NET)](https://github.com/crypticsy/RopeyDVDManagementSystem)
 * [Library Management System (Python)](./Library_Management_System/)
 * [Opticalog (Java)](./Opticalog/)
