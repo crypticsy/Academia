@@ -8,4 +8,4 @@ A collection of assessment project that I enjoyed developing
 * [Chess Engine (Python)](https://github.com/crypticsy/Playground/tree/master/Game_Engine/Chess)
 * [DVD Rental Management System (ASP.NET)](https://github.com/crypticsy/RopeyDVDManagementSystem)
 * [Library Management System (Python)](./Library_Management_System/)
-* [Opticalog (Java)](./Opticalog/)
+* [Spectacle Inventory Management System - Opticalog (Java)](./Opticalog/)
