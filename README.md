@@ -1,13 +1,13 @@
 # Academia
-A collection of assessment project that I enjoyed developing
+A collection of assessments that I enjoyed developing. These projects may seem bizarre at times and pointless in real-world applications. Yet, at that moment as i was doing them,  all I knew was that I was having fun.
 
 <br>
 
 #### Undergraduate
-* [Apollo Music Store (XML)](./Apollo_Music_Center/)
-* [Chess Engine (Python)](https://github.com/crypticsy/Playground/tree/master/Game_Engine/Chess)
-* [College Database System - Berkley College (SQL & C#)](./BerkleyCollegeSystem/)
-* [DVD Rental Management System (ASP.NET)](https://github.com/crypticsy/RopeyDVDManagementSystem)
-* [Library Management System (Python)](./Library_Management_System/)
-* [Spectacle Inventory Management System - Opticalog (Java)](./Opticalog/)
-* [Ticket Management System - Hermes Recreation Center (C#)](./Hermes_Ticket_Management_System/)
+* [Apollo Music Store <span style="color:lightgrey">`XML`</span>](./Apollo_Music_Center/)
+* [Chess Engine <span style="color:lightgrey">`Python`](https://github.com/crypticsy/Playground/tree/master/Game_Engine/Chess)
+* [College Database System - Berkley College <span style="color:lightgrey">`SQL`  `C#`](./Berkley_College_System/)
+* [DVD Rental Management System - Ropey DVD Center <span style="color:lightgrey">`ASP.NET`](https://github.com/crypticsy/RopeyDVDManagementSystem)
+* [Inventory Management System - Opticalog <span style="color:lightgrey">`Java`](./Opticalog/)
+* [Library Management System <span style="color:lightgrey">`Python`](./Library_Management_System/)
+* [Ticket Management System - Hermes Recreation Center <span style="color:lightgrey">`C#`](./Hermes_Ticket_Management_System/)

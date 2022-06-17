@@ -79,5 +79,3 @@ The application has multiple level of access based on user level, as well as an 
 <p align="center">
     <img src="./images/employee.png"/>
 </p>
-
-</br></br>
