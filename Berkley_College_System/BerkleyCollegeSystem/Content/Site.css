@@ -1,0 +1,74 @@
+﻿@font-face {
+    font-family: comfortaa_bold;
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: comfortaa_light;
+    src: url(../fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: intro_rust;
+    src: url(../fonts/IntroRust-Base.otf);
+}
+
+
+
+/* Change the look of scrollbar to custom */
+
+#mainBody::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+#mainBody::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #eeeeee;
+    background-color: #908f8f;
+    border-radius: 50px;
+}
+
+#mainBody::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #eeeeee;
+    border-radius: 50px;
+}
+
+#mainBody::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: #908f8f;
+    border-radius: 50px;
+}
+
+.comfortaa-bold{
+    font-family: comfortaa_bold !important;
+    letter-spacing: 1.25px;
+}
+
+.comfortaa-light {
+    font-family: comfortaa_light !important;
+    letter-spacing: 1px;
+}
+
+.intro-rust{
+    font-family: intro_rust !important;
+    letter-spacing: 2px;
+}
+
+.font-small {
+    font-size: 1.3vh;
+    letter-spacing: 1.5px;
+}
+
+.copyright {
+    font-size: 1vh;
+    letter-spacing: 1.5px;
+}
+
+.white,
+.white:hover,
+.white:focus,
+.white:active{
+    color:white !important;
+}

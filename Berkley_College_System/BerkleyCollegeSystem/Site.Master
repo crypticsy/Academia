@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BerkleyCollegeSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="An applicaition for handling the inner operations at Berkley College.">
+	<meta name="author" content="Animesh Singh Basnet">
+
+    <title> Berkley : <%: Page.Title %> </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+    
+	<link href="Content/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+	<link href="Content/Site.css" rel="stylesheet">
+
+	<asp:ContentPlaceHolder ID="CSSContent" runat="server">
+	</asp:ContentPlaceHolder>
+
+</head>
+
+<body >
+
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+		<div class="wrapper">
+
+			<nav id="sidebar" class="sidebar js-sidebar">
+				<div class="sidebar-content js-simplebar">
+
+					<a class="sidebar-brand text-decoration-none text-center justify-content-center mt-4" runat="server" href="~/">
+						<h6 class="intro-rust text-white">Berkley System &nbsp; </h6>
+					</a>
+
+					<ul class="sidebar-nav">
+						
+						<li class="text-sm copyright comfortaa-light sidebar-header" style="opacity:0.4">
+							Analytics
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Dashboard">
+							<a class="sidebar-link" runat="server" href="~/Dashboard">
+								<i class="align-middle" data-feather="pie-chart"></i> 
+								<span class="align-middle">&nbsp; Dashboard</span>
+							</a>
+						</li>
+
+						<li class="text-sm copyright comfortaa-light sidebar-header" style="opacity:0.4">
+							Basic Webforms
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Student">
+							<a class="sidebar-link" runat="server" href="~/Student">
+								<i class="align-middle" data-feather="user"></i> 
+								<span class="align-middle">&nbsp; Student</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Department">
+							<a class="sidebar-link" runat="server" href="~/Department">
+								<i class="align-middle" data-feather="home"></i> 
+								<span class="align-middle">&nbsp; Department</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Teacher">
+							<a class="sidebar-link" runat="server" href="~/Teacher">
+								<i class="align-middle" data-feather="briefcase"></i> 
+								<span class="align-middle">&nbsp; Teacher</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Address">
+							<a class="sidebar-link" runat="server" href="~/Address">
+								<i class="align-middle" data-feather="map-pin"></i> 
+								<span class="align-middle">&nbsp; Address</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="Module">
+							<a class="sidebar-link" runat="server" href="~/Module">
+								<i class="align-middle" data-feather="book"></i> 
+								<span class="align-middle">&nbsp; Module</span>
+							</a>
+						</li>
+
+						<li class="text-sm copyright comfortaa-light sidebar-header" style="opacity:0.4">
+							Complex Webforms
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="TeacherModule">
+							<a class="sidebar-link" runat="server" href="~/TeacherModule">
+								<i class="align-middle" data-feather="clipboard"></i> 
+								<span class="align-middle">&nbsp; Teacher Module</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="StudentFee">
+							<a class="sidebar-link" runat="server" href="~/StudentFee">
+								<i class="align-middle" data-feather="dollar-sign"></i> 
+								<span class="align-middle">&nbsp; Student Fee</span>
+							</a>
+						</li>
+
+						<li class="comfortaa-bold text-sm sidebar-item" id="StudentAssignment">
+							<a class="sidebar-link" runat="server" href="~/StudentAssignment">
+								<i class="align-middle" data-feather="edit"></i> 
+								<span class="align-middle">&nbsp; Student Assignment</span>
+							</a>
+						</li>
+
+					</ul>
+				
+					<div class="text-center text-white pb-2">
+						<hr style="opacity:0.1" />
+						<p style="opacity:0.5" class="text-sm copyright comfortaa-light"> Copyright &copy; <%: DateTime.Now.Year %> - Berkley System</p>
+					</div>
+					
+				</div>
+
+			</nav>
+
+			<main class="main">
+
+				<div class="mt-5 mx-6">
+
+					<a class="sidebar-toggle js-sidebar-toggle">
+						<i class="hamburger align-self-center"></i>
+					</a>
+
+				</div>
+
+				
+				<div class="content">
+					<div class="container-fluid p-4">
+						<asp:ContentPlaceHolder ID="MainContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+
+			</main>
+
+		</div>
+
+    </form>
+	
+	<script src="Scripts/js/app.js"></script>
+
+	<script>
+		
+		var cur_page = <%: Page.Title %>;
+		var element = document.getElementById(cur_page.id);
+		element.className += ' active';
+
+	</script>
+	
+	<asp:ContentPlaceHolder ID="JavaScriptContent" runat="server">
+	</asp:ContentPlaceHolder>
+	
+</body>
+</html>
