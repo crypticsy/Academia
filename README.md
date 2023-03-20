@@ -1,6 +1,6 @@
 # Academia
 A collection of assessments that I enjoyed developing. While some of the projects may seem unconventional and lacking practical application, I found them to be engaging and entertaining while developing them. The focus was on the enjoyment of the process rather than the practicality of the outcome.
-<br>
+<br/>
 
 #### Undergraduate
 
