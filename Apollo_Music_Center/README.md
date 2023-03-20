@@ -4,7 +4,7 @@
 
 That's how I'd want to brand a hypothetical company that intended to build their website in the most multipurpose system possible using XML. However, I am not a businessman, and the website is only a prototype of the full potential that some xml and css can have.
 
-Preview the  website [here](./apollo.xml).
+Preview the  website [here](https://crypticsy.github.io/Academia/Apollo_Music_Center/apollo.xml).
 
 <sub> <b>Note:</b> The file also contains XSD and DTD schema for data validation.</sub>
 <br/>
