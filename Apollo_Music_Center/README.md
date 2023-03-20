@@ -10,8 +10,6 @@ Preview the  website [here](https://crypticsy.github.io/Academia/Apollo_Music_Ce
 <br/>
 
 <div align=center>
- 
  <img src="./apollo_website.png" >
-
 </div>
 
