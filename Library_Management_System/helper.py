@@ -68,7 +68,8 @@ def file_to_list(filename):
     # open the book.txt file in "read" mode 
     with open(f"{filename}.txt", "r") as file:
         for line in file.readlines():                           # read each line
-            book.append(line.strip(" \n").split(","))       # split the line and store the information in book variable
+            if line != "":
+                book.append(line.strip(" \n").split(","))       # split the line and store the information in book variable
 
     return book
 

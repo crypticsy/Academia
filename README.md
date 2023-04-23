@@ -44,6 +44,12 @@ A collection of assessments that I enjoyed developing. While some of the project
         </a>
     </li>
     <li>
+        <a href="./Stock_Management_System/">Laptop Stock Management System <span style="color:lightgrey">
+                <code>Python</code>
+            </span>
+        </a>
+    </li>
+    <li>
         <a href="./Hermes_Ticket_Management_System/">Ticket Management System - Hermes Recreation Center <span style="color:lightgrey">
                 <code>C#</code>
             </span>
