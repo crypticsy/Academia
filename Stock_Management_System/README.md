@@ -12,6 +12,6 @@ python main.py
 
 
 <div align=center>
-  <img src="./lms_preview.png" >
+  <img src="./sms_preview.png" >
 </div>
 
