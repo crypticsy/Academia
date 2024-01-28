@@ -3,7 +3,7 @@
 A collection of assessments that I enjoyed developing. While some of the projects may seem unconventional and lacking practical application, I found them to be engaging and entertaining while developing them. The focus was on the enjoyment of the process rather than the practicality of the outcome.
 <br/>
 
-#### Undergraduate
+#### BSc (Hons) Computing
 
 <ul>
     <li>
@@ -15,6 +15,7 @@ A collection of assessments that I enjoyed developing. While some of the project
     <li>
         <a href="https://github.com/crypticsy/Playground/tree/master/Game_Engine/Chess/" target="_blank">Chess Engine <span style="color:lightgrey">
                 <code>Python</code>
+                <code>PyGame</code>
             </span>
         </a>
     </li>
@@ -44,7 +45,7 @@ A collection of assessments that I enjoyed developing. While some of the project
         </a>
     </li>
     <li>
-        <a href="./Stock_Management_System/">Laptop Stock Management System <span style="color:lightgrey">
+        <a href="./Stock_Management_System/">Stock Management System <span style="color:lightgrey">
                 <code>Python</code>
             </span>
         </a>
@@ -56,3 +57,22 @@ A collection of assessments that I enjoyed developing. While some of the project
         </a>
     </li>
 </ul>
+<br/>
+
+#### MSc Artificial Intelligence
+
+<ul>
+    <li>
+        <a href="https://github.com/crypticsy/PathVisualizer" target="_blank">Algorithm Path Visualizer <span style="color:lightgrey">
+                <code>Flask</code>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="./GeoGuesser/">Geo Guesser Classifier<span style="color:lightgrey">
+                <code>Python</code>
+            </span>
+        </a>
+    </li>
+</ul>
+<br/>

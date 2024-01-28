@@ -6,5 +6,5 @@ TODAY=$(date +"%a,%d %b, %Y %I:%M %p")
 # add all changes
 git add *
 # commit changes
-git commit -m "Academia : Updated projects till $TODAY"
+git commit -m "🤖 Updated projects till $TODAY"
 git push origin master
