@@ -89,7 +89,8 @@ A collection of assessments that I enjoyed developing. While some of the project
         <a href="https://github.com/crypticsy/VisionCaster">Vision Caster
             <span style="color:lightgrey">
                 <code>Raspberry Pi</code>
-                <code>LLM Vision Model</code>
+                <code>Transformers</code>
+                <code>Azure</code>
             </span>
         </a>
     </li>
@@ -98,7 +99,6 @@ A collection of assessments that I enjoyed developing. While some of the project
             <span style="color:lightgrey">
                 <code>Semantics</code>
                 <code>OwlReady2</code>
-                <code>Protege</code>
                 <code>Streamlit</code>
             </span>
         </a>
