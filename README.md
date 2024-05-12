@@ -81,15 +81,28 @@ A collection of assessments that I enjoyed developing. While some of the project
         <a href="./GeoGuesser/">Geo Guesser Classifier
             <span style="color:lightgrey">
                 <code>Python</code>
+                <code>Machine Learning</code>
             </span>
         </a>
     </li>
     <li>
-        <a href="https://github.com/crypticsy/VisionCaster">VisionCaster
+        <a href="https://github.com/crypticsy/VisionCaster">Vision Caster
             <span style="color:lightgrey">
                 <code>Raspberry Pi</code>
+                <code>LLM Vision Model</code>
             </span>
         </a>
     </li>
+    <li>
+        <a href="./Animated_Movie_Ontology/">Animated Movie Ontology
+            <span style="color:lightgrey">
+                <code>Semantics</code>
+                <code>OwlReady2</code>
+                <code>Protege</code>
+                <code>Streamlit</code>
+            </span>
+        </a>
+    </li>
+    
 </ul>
 <br/>
